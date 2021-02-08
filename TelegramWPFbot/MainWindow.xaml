@@ -1,0 +1,20 @@
+﻿<Window x:Class="OPIS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OPIS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="299*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="61*"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="listMessage" Grid.Row="0" Grid.Column="0" Background="Aqua" Margin="10"/>
+        <TextBox x:Name="txtMsg" Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Background ="Beige" FontSize="30" />
+        <Button Content="Отправить" Margin="10" Grid.Row="2" FontSize="30" Click="Button_Click"/>
+
+    </Grid>
+</Window>
